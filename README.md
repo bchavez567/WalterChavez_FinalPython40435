@@ -41,4 +41,3 @@ Activar comentarios en el archivo y usar como guía el proyecto subido al materi
     python manage.py migrate
     python manage.py runserver
 
-4) 
