@@ -1,0 +1,18 @@
+{% extends "App1/padre.html" %}
+{% load static %}
+{% block contenidoQueCambia %}
+
+    <!--Aquí va lo que cambia, y lo asociado a está vista :) -->
+    <h1>"Acera de mi"</h1>
+    <h2>
+        Soy Walter
+    </h2>
+    <aside>
+        <p>Estudiante de CoderHouse, cree este blog para que un usuario se logee, y pueda navegar por toda la App.</p>
+        <p>El mismo puede acceder a la info de su usuario, editarlo y/o borrarlo</p>
+        <p>Cuenta con un CRUD sencillo para poder comprar libros.</p>
+    </aside>
+
+    <p>Click para voler al, <a class="navbar-brand" href="{% url 'Inicio' %}">Inicio</a></p>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "App1/padre.html" %}
+{% load static %}
+{% block contenidoQueCambia %}
+
+<br>
+
+{% for p in libros %}
+
+<li>{{p}}</li>
+
+{% endfor %}
+
+
+{% endblock %}

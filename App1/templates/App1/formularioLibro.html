@@ -1,0 +1,137 @@
+{% extends "App1/padre.html" %}
+{% load static %}
+{% block contenidoQueCambia %}
+
+<br>
+
+<div class="container">
+    <div class="row">
+        <div class="col-mb-5">
+            <div class="card">
+                <div class="card-header">
+                    Datos del libro
+                </div>
+                <div class="card-body">
+                    <form action="./inicio" method="post">
+
+                        <div class="mb-3">
+                            <label for="txtNombre" class="form-label">Nombre:</label>
+                            <input type="text" class="form-control" name="txtNombre" id="txtNombre" aria-invalid="helpId" placeholder="Escriba el nombre del libro">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="txtImagen" class="form-label">Imagen:</label>
+                            <input type="file" class="form-control" name="xtImagen" id="txtImagen" aria-invalid="helpId" placeholder="Seleciona la Imagen">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="xtURL" class="form-label">URL Descarga:</label>
+                            <input type="text" class="form-control" name="xtURL" id="xtURL" aria-invalid="helpId" placeholder="Escriba la URL de descarga">
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Agregar</button>
+                    </form>
+                </div>
+                <div class="card-footer text-muted">
+                </div>
+            </div>
+        
+        </div>
+    </div>
+
+
+    <div class="col-mb-8">
+        <div class="table-responsive">
+            <table class="table table-primary">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Imagen</th>
+                        <th>URL</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="">
+                        <td scope="row">1</td>
+                        <td>El capital en el siglo XXI</td>
+                        <td>imagen.jpg</td>
+                        <td>https://es.scribd.com/book</td>
+                        <td>
+                            <form action="" method="post">
+                                <!-- <input type="text" name="txtId" id="txtId"> -->
+                                <button type="submit" class="btn btn-danger">Eliminar</button>
+                            </form>
+                        </td>
+
+                    </tr>
+                </tbody>
+            </table>
+            <div class="table-responsive">
+                <table class="table table-primary">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Imagen</th>
+                            <th>URL</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="">
+                            <td scope="row">2</td>
+                            <td>I Ching: El Libro de los Cambios</td>
+                            <td>imagen.jpg</td>
+                            <td>https://es.scribd.com/book</td>
+                            <td>
+                                <form action="" method="post">
+                                    <!-- <input type="text" name="txtId" id="txtId"> -->
+                                    <button type="submit" class="btn btn-danger">Eliminar</button>
+                                </form>
+                            </td>
+    
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="table-responsive">
+                <table class="table table-primary">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Imagen</th>
+                            <th>URL</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="">
+                            <td scope="row">3</td>
+                            <td>El retrato de Dorian Gray: Clásicos</td>
+                            <td>imagen.jpg</td>
+                            <td>https://es.scribd.com/book</td>
+                            <td>
+                                <form action="./formularioLibro.html" method="post">
+                                    <!-- <input type="text" name="txtId" id="txtId"> -->
+                                    <button type="submit" class="btn btn-danger">Eliminar</button>
+                                </form>
+                            </td>
+    
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+
+
+
+{% endblock %}
